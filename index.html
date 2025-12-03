@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ToDoMVC - TypeScript (Vanilla)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="todoapp">
+        <header class="header">
+            <h1>todos</h1>
+            <!-- HTML input used to add tasks -->
+            <input id="new-todo" class="new-todo" placeholder="What needs to be done?" autofocus data-add-input />
+        </header>
+
+        <section class="main" aria-hidden="true">
+            <input id="toggle-all" class="toggle-all" type="checkbox" />
+            <label for="toggle-all">Mark all as complete</label>
+
+            <ul id="todo-list" class="todo-list"></ul>
+        </section>
+
+        <footer class="footer">
+            <span id="todo-count" class="todo-count"></span>
+            <ul class="filters">
+                <li><a href="#/" class="selected" data-filter="all">All</a></li>
+                <li><a href="#/active" data-filter="active">Active</a></li>
+                <li><a href="#/completed" data-filter="completed">Completed</a></li>
+            </ul>
+            <button id="clear-completed" class="clear-completed">Clear completed</button>
+        </footer>
+    </section>
+
+    <footer class="info">
+        <p>Simple ToDoMVC app written in TypeScript. Edit tasks with double-click, delete with ✕.</p>
+    </footer>
+
+    <script type="module" src="dist/></script>
+</body>
+</html>
