@@ -71,6 +71,7 @@ jobs:
           format: table
 
   slack-notify:
+    needs: trivy-scan
     runs-on: ubuntu-latest
     steps:
       - name: Send Slack Notification
