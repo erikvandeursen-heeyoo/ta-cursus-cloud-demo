@@ -31,6 +31,7 @@ function loadTodos(): Todo[] {
         const parsed = JSON.parse(raw) as Todo[];
         return parsed;
     } catch (e) {
+        console.log(e);
         return [];
     }
 }
