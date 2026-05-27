@@ -50,7 +50,7 @@ jobs:
 
   playwright-tests:
     needs: trivy-scan
-    timeout-minutes: 60
+    timeout-minutes: 10   # default set to 60, for demo purposes set to 10
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
